@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "${name}",
-  "description": "A simple Minecraft mod that make the game window un-resizeable",
+  "description": "A simple Minecraft mod that makes the game window un-resizeable",
   "authors": [
     "Fallen_Breath"
   ],
@@ -15,7 +15,7 @@
 
   "icon": "assets/lockedwindowsize/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       "me.fallenbreath.lockedwindowsize.LockedWindowSizeMod"

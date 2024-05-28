@@ -4,29 +4,28 @@
   "version": "${version}",
 
   "name": "${name}",
-  "description": "Template for my fabric mods",
+  "description": "A simple Minecraft mod that make the game window un-resizeable",
   "authors": [
     "Fallen_Breath"
   ],
   "contact": {
-    "homepage": "https://modrinth.com",
-    "sources": "https://github.com/Fallen-Breath/fabric-mod-template"
+    "homepage": "https://modrinth.com/project/locked-window-size",
+    "sources": "https://github.com/Fallen-Breath/locked-window-size"
   },
 
-  "icon": "assets/template_mod/icon.png",
+  "icon": "assets/lockedwindowsize/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.fallenbreath.template_mod.TemplateMod"
+      "me.fallenbreath.lockedwindowsize.LockedWindowSizeMod"
     ]
   },
   "mixins": [
-    "template_mod.mixins.json"
+    "lockedwindowsize.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.4",
     "minecraft": "${minecraft_dependency}"
   }
 }

@@ -1,21 +1,21 @@
-## fabric-mod-template
+# Locked Window Size
 
-[![License](https://img.shields.io/github/license/Fallen-Breath/fabric-mod-template.svg)](http://www.gnu.org/licenses/lgpl-3.0.html)
-[![workflow](https://github.com/Fallen-Breath/fabric-mod-template/actions/workflows/gradle.yml/badge.svg)](https://github.com/Fallen-Breath/fabric-mod-template/actions/workflows/gradle.yml)
+<img src="icon_large.png" alt="icon" width="200" height="200" align="right"/>
 
-fallen's fabric mod template
+[![License](https://img.shields.io/github/license/Fallen-Breath/locked-window-size.svg)](http://www.gnu.org/licenses/lgpl-3.0.html)
+[![workflow](https://github.com/Fallen-Breath/locked-window-size/actions/workflows/gradle.yml/badge.svg)](https://github.com/Fallen-Breath/classic-minecraft-icon/actions/workflows/gradle.yml)
+[![MC Versions](https://cf.way2muchnoise.eu/versions/For%20MC_1026724_all.svg)](https://legacy.curseforge.com/minecraft/mc-mods/classic-minecraft-icon)
+[![CurseForge](https://cf.way2muchnoise.eu/full_1026724_downloads.svg)](https://legacy.curseforge.com/minecraft/mc-mods/classic-minecraft-icon)
+[![Modrinth](https://img.shields.io/modrinth/dt/rDa4D0QX?label=Modrinth%20Downloads)](https://modrinth.com/mod/classic-minecraft-icon)
 
-If you find it helpful, a credit to this template in your project will be greatly appreciated
+A simple Minecraft mod that make the game window un-resizeable
 
-## To use
+It's a fabric mod that works in all version and requires no extra dependency
 
-1. Clone / Use this template to get a new project
-2. Search `[FEATURE]` in the project, delete or uncomment those addons
-3. Setup the mod
-    - Edit java package name
-    - Edit [gradle.properties](gradle.properties) for mod id / name etc.
-    - Edit mod name in [bug_report.yml](.github/ISSUE_TEMPLATE/bug_report.yml)
-    - Edit [common.gradle](common.gradle) for mod file location constants
-    - Change the Minecraft versions in [settings.json](settings.json), [build.gradle](build.gradle), and files in the [versions](versions) folder
-    - Search `template` in the project to see if there are any missing unedited stuffs
-4. Edit [README](README.md) for the new mod
+How does it work? With this one-line magic code:
+
+```java
+GLFW.glfwWindowHint(GLFW.GLFW_RESIZABLE, GLFW.GLFW_FALSE);
+```
+
+![screenshot](screenshot.png)
